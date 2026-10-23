@@ -1,0 +1,21 @@
+/* *{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+} */
+
+/* body {
+    font-family: ;
+} */
+
+.main {
+    max-width: 430px;
+}
+
+.navigation__icon {
+    display: flex;
+    justify-content: center;
+    border: 16px;
+    padding: 16px 8px;
+    gap: 20px;
+}
