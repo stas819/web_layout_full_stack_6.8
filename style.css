@@ -1,12 +1,18 @@
-/* *{
+*{
     box-sizing: border-box;
     margin: 0;
     padding: 0;
-} */
+}
 
-/* body {
-    font-family: ;
-} */
+@font-face {
+    font-family: TT lakes;
+    src: url('./TT\ lakes\ font/');
+}
+
+body {
+    background: #f8f8f8;
+    font-family: TT lakes;
+}
 
 .main {
     max-width: 430px;
@@ -14,8 +20,18 @@
 
 .navigation__icon {
     display: flex;
-    justify-content: center;
+    justify-content: space-evenly;
     border: 16px;
     padding: 16px 8px;
     gap: 20px;
+    width: auto;
+}
+
+header {
+    background-color: #ffffff;
+}
+
+.title {
+    display: flex;
+    gap: 15px;
 }
