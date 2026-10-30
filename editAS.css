@@ -1,0 +1,23 @@
+.tab-content {
+    display: none;
+}
+
+#repairable-devices:checked ~ .content1{
+    display: block;
+}
+
+#additional-services:checked ~ .content2 {
+    display: block;
+}
+
+.hidden-text {
+    display: none;
+}
+
+#more:checked ~ .hidden-text {
+    display: block;
+}
+
+#more:checked ~ label {
+    display: none;
+}
