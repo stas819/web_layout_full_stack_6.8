@@ -40,43 +40,32 @@ h1 {
     margin: 30px 20px 15px 15px;
 }
 
-/* input {
+.tab-content1, .tab-content2 {
     display: none;
-} */
-
-/* .tabs-container {
-    background-color: #f8f8f8;
-    display: flex;
 }
 
-.tab-name {
-    width: 246px;
-    height: 40px;
-    margin: 20px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    opacity: 0.5;
+#repairable-devices:checked ~ .tab-content .tab-content1 {
+    display: block;
 }
 
-/* если отмечен input и за ним следует label с классом tab-name, то отображать инфу вот так */
-/* input:checked + label .tab-name {
-    border-radius: 6px;
-    border: 2px solid #B8FFEC;
-    background-color: #ffffff;
-    box-sizing: border-box;
+#additional-services:checked ~ .tab-content .tab-content2 {
+    display: block;
 }
 
-.tab-content {
-    position: absolute;
-    font-family: inherit;
-    opacity: 0;
-    width: 288;
-    height: 90;
+.tabs-buttons {
+    color: #7E7E82;
+    background-color: #ffffff
+    border-radius: 6px;    
 }
 
-input:checked + label .tab-content {
-    opacity: 1;
-    margin-left: 15px;
-    font-size: 14px;
-} */
+.hidden-text1 .hidden-text2 {
+    display: none;
+}
+
+input[type="checkbox"] {
+    display: none;
+}
+
+.readmore-button {
+    margin-left: 10px;
+}
