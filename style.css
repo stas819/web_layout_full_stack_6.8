@@ -15,7 +15,7 @@ body {
 }
 
 .main {
-    max-width: 430px;
+    width: 100%;
     font-family: inherit;
 }
 
@@ -52,13 +52,20 @@ h1 {
     display: block;
 }
 
-.tabs-buttons {
+.tabs-buttons label {
+    border: 2px solid #B8FFEC;
+    background-color: white;
     color: #7E7E82;
-    background-color: #ffffff
-    border-radius: 6px;    
+    border-radius: 6px;
+    padding: 8px 16px;
 }
 
-.hidden-text1 .hidden-text2 {
+.tabs-container {
+    display: block;
+    gap: 10px;
+}
+
+.hidden-text1, .hidden-text2 {
     display: none;
 }
 
@@ -68,4 +75,9 @@ input[type="checkbox"] {
 
 .readmore-button {
     margin-left: 10px;
+}
+
+#more1:checked ~ .hidden-text1,
+#more2:checked ~ .hidden-text2 {
+    display: block;
 }
