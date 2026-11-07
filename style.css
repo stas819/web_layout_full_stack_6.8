@@ -11,10 +11,10 @@
 
 body {
     background: #f8f8f8;
-    font-family: TT lakes;
+    font-family: TT lakes, sans-serif;
 }
 
-.main {
+main {
     width: 100%;
     font-family: inherit;
 }
@@ -39,6 +39,7 @@ header {
 h1 {
     margin: 30px 20px 15px 15px;
 }
+/* ---------------------------------------------------------- */
 
 .tab-content1, .tab-content2 {
     display: none;
@@ -60,16 +61,11 @@ h1 {
     padding: 8px 16px;
 }
 
-.tabs-container {
-    display: block;
-    gap: 10px;
-}
-
 .hidden-text1, .hidden-text2 {
     display: none;
 }
 
-input[type="checkbox"] {
+input[type="checkbox"], input[type="radio"] {
     display: none;
 }
 
@@ -80,4 +76,12 @@ input[type="checkbox"] {
 #more1:checked ~ .hidden-text1,
 #more2:checked ~ .hidden-text2 {
     display: block;
+}
+
+.page-picture {
+    width: 100%;
+}
+
+section {
+    padding: 20px;
 }

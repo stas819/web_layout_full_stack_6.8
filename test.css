@@ -1,0 +1,88 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+@font-face {
+    font-family: TT lakes;
+    src: url('./TT\ lakes\ font/');
+}
+
+body {
+    background: #f8f8f8;
+    font-family: TT lakes, sans-serif;
+}
+
+main {
+    width: 100%;
+    font-family: inherit;
+}
+
+.navigation__icon {
+    display: flex;
+    justify-content: space-evenly;
+    border: 16px;
+    padding: 16px 8px;
+    gap: 20px;
+    width: auto;
+}
+
+header {
+    background-color: #ffffff;
+}
+
+.title {
+    display: flex;
+    margin-bottom: 20%;
+}
+
+h1 {
+    margin: 30px 20px 15px 15px;
+}
+/* ---------------------------------------------------------- */
+
+.nav {
+    display: inline-block;
+}
+
+.tab-content1, .tab-content2 {
+    display: none;
+}
+
+#repairable-devices:checked ~ .tab-content .tab-content1 {
+    display: block;
+}
+
+#additional-services:checked ~ .tab-content .tab-content2 {
+    display: block;
+}
+
+.tabs-buttons label {
+    border: 2px solid #B8FFEC;
+    background-color: white;
+    color: #7E7E82;
+    border-radius: 6px;
+    padding: 8px 16px;
+}
+
+.hidden-text1, .hidden-text2 {
+    display: none;
+}
+
+input[type="checkbox"], input[type="radio"] {
+    display: none;
+}
+
+.readmore-button {
+    margin-left: 10px;
+}
+
+#more1:checked ~ .hidden-text1,
+#more2:checked ~ .hidden-text2 {
+    display: block;
+}
+
+.page-picture {
+    width: 100%;
+}
