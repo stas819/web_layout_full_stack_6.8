@@ -34,7 +34,7 @@ header {
 
 .title {
     display: flex;
-    margin-bottom: 20%;
+    /* margin-bottom: 20%; */
 }
 
 h1 {
@@ -43,7 +43,8 @@ h1 {
 /* ---------------------------------------------------------- */
 
 .nav {
-    display: inline-block;
+    display: flex;
+
 }
 
 .tab-content1, .tab-content2 {
@@ -71,7 +72,8 @@ h1 {
 }
 
 input[type="checkbox"], input[type="radio"] {
-    display: none;
+    display: block;
+
 }
 
 .readmore-button {
@@ -85,4 +87,10 @@ input[type="checkbox"], input[type="radio"] {
 
 .page-picture {
     width: 100%;
+}
+
+.tabs-container {
+    display: contents;
+    padding: 20px;
+    
 }
