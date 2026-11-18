@@ -15,7 +15,6 @@ body {
 }
 
 main {
-    max-width: 320px;
     font-family: inherit;
 }
 
@@ -34,6 +33,8 @@ header {
 
 .title {
     display: flex;
+    align-items: center;
+    gap: 12px;
 }
 
 .title span{
@@ -41,11 +42,14 @@ header {
     height: 40px;
     border-radius: 5px;
     background-color: #41F6D7;
-    margin-right: auto;
+    flex-shrink: 0;
+    border-radius: 0 5px 5px 0;
 }
 
 h1 {
-    margin: 30px 20px 15px 15px;
+    font-size: 28px;
+    line-height: 40px;
+    margin: 0;
 }
 /* ---------------------------------------------------------- */
 
@@ -60,6 +64,8 @@ h1 {
 #additional-services:checked ~ .tab-content .tab-content2 {
     display: block;
 }
+
+#repairable-devices:checked ~ .tabs-buttons
 
 .tabs-buttons label {
     border: 2px solid #B8FFEC;
@@ -88,16 +94,38 @@ input[type="checkbox"], input[type="radio"] {
     display: block;
 }
 
-.page-picture {
-    width: 100%;
+#more1:checked ~ .read-more1-label {
+    display: none;
 }
 
-section {
-    padding: 20px;
+#more2:checked ~ .read-more2-label {
+    display: none;
+}
+
+.page-picture {
+    width: 100%;
 }
 
 .tabs-container {
     display: flex;
     flex-direction: column;
     gap: 30px;
+    padding: 24px 16px;
+}
+
+.tabs-buttons {
+    display: flex;
+    overflow-x: scroll;
+}
+
+.content {
+    padding: 24px 0;
+}
+
+.navigation {
+    margin-left: auto;
+}
+
+.navigation__icon--headerright {
+    margin-left: auto;
 }
