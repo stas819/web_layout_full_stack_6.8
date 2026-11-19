@@ -54,7 +54,8 @@ h1 {
 
 
 /* ниже начинается работа с табами */
-.tab-content1, .tab-content2, .tab-content3, .tab-content4 {
+.tab-content1, .tab-content2, .tab-content3, .tab-content4,
+.tab-content5 {
     display: none;
 }
 
@@ -74,10 +75,15 @@ h1 {
     display: block;
 }
 
+#special-price:checked ~ .tab-content .tab-content5 {
+    display: block;
+}
+
 #repairable-devices:checked ~ .tabs-buttons label[for="repairable-devices"],
 #additional-services:checked ~ .tabs-buttons label[for="additional-services"],
 #price:checked ~.tabs-buttons label[for='price'],
-#service-center-address:checked ~ .tabs-buttons label[for="service-center-address"] {
+#service-center-address:checked ~ .tabs-buttons label[for="service-center-address"],
+#special-price:checked ~ .tabs-buttons label[for="special-price"] {
     border: 2px solid #B8FFEC;
     background-color: white;
 }
@@ -90,7 +96,8 @@ h1 {
     flex-direction: row;
 }
 
-.hidden-text1, .hidden-text2, .hidden-text3, .hidden-text4 {
+.hidden-text1, .hidden-text2, .hidden-text3, .hidden-text4,
+.hidden-text5 {
     display: none;
 }
 
@@ -105,7 +112,8 @@ input[type="checkbox"], input[type="radio"] {
 #more1:checked ~ .hidden-text1,
 #more2:checked ~ .hidden-text2,
 #more3:checked ~ .hidden-text3,
-#more4:checked ~ .hidden-text4 {
+#more4:checked ~ .hidden-text4,
+#special-price:checked ~ .hidden-text5 {
     display: block;
 }
 
@@ -122,6 +130,10 @@ input[type="checkbox"], input[type="radio"] {
 }
 
 #more4:checked ~ .read-more4-label {
+    display: none;
+}
+
+#special-price:checked ~ .read-more5-label {
     display: none;
 }
 
