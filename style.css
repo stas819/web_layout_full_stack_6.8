@@ -51,9 +51,10 @@ h1 {
     line-height: 40px;
     margin: 0;
 }
-/* ---------------------------------------------------------- */
 
-.tab-content1, .tab-content2, .tab-content3 {
+
+/* ниже начинается работа с табами */
+.tab-content1, .tab-content2, .tab-content3, .tab-content4 {
     display: none;
 }
 
@@ -69,9 +70,14 @@ h1 {
     display: block;
 }
 
+#service-center-address:checked ~ .tab-content .tab-content4 {
+    display: block;
+}
+
 #repairable-devices:checked ~ .tabs-buttons label[for="repairable-devices"],
 #additional-services:checked ~ .tabs-buttons label[for="additional-services"],
-#price:checked ~.tabs-buttons label[for='price'] {
+#price:checked ~.tabs-buttons label[for='price'],
+#service-center-address:checked ~ .tabs-buttons label[for="service-center-address"] {
     border: 2px solid #B8FFEC;
     background-color: white;
 }
@@ -84,7 +90,7 @@ h1 {
     flex-direction: row;
 }
 
-.hidden-text1, .hidden-text2, .hidden-text3 {
+.hidden-text1, .hidden-text2, .hidden-text3, .hidden-text4 {
     display: none;
 }
 
@@ -98,7 +104,8 @@ input[type="checkbox"], input[type="radio"] {
 
 #more1:checked ~ .hidden-text1,
 #more2:checked ~ .hidden-text2,
-#more3:checked ~ .hidden-text3 {
+#more3:checked ~ .hidden-text3,
+#more4:checked ~ .hidden-text4 {
     display: block;
 }
 
@@ -114,8 +121,8 @@ input[type="checkbox"], input[type="radio"] {
     display: none;
 }
 
-.page-picture {
-    width: 100%;
+#more4:checked ~ .read-more4-label {
+    display: none;
 }
 
 .tabs-container {
@@ -132,6 +139,12 @@ input[type="checkbox"], input[type="radio"] {
 
 .content {
     padding: 24px 0;
+}
+/* до этого момента стилизация табов */
+
+
+.page-picture {
+    width: 100%;
 }
 
 .navigation {
