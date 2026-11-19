@@ -65,11 +65,13 @@ h1 {
     display: block;
 }
 
-#repairable-devices:checked ~ .tabs-buttons
-
-.tabs-buttons label {
+#repairable-devices:checked ~ .tabs-buttons label[for="repairable-devices"],
+#additional-services:checked ~ .tabs-buttons label[for="additional-services"] {
     border: 2px solid #B8FFEC;
     background-color: white;
+}
+
+.tabs-buttons label { 
     color: #7E7E82;
     border-radius: 6px;
     padding: 8px 16px;
