@@ -21,6 +21,7 @@ main {
 .navigation__icon {
     display: flex;
     justify-content: space-evenly;
+    align-items: center;
     border: 16px;
     padding: 16px 8px;
     gap: 20px;
