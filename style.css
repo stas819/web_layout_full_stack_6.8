@@ -20,7 +20,7 @@ main {
 
 .navigation__icon {
     display: flex;
-    justify-content: space-evenly;
+    justify-content: space-between;
     align-items: center;
     border: 16px;
     padding: 16px 8px;
@@ -158,6 +158,7 @@ input[type="checkbox"], input[type="radio"] {
 .tabs-buttons {
     display: flex;
     overflow-x: scroll;
+    white-space: nowrap;
 }
 
 .content {
@@ -174,6 +175,19 @@ input[type="checkbox"], input[type="radio"] {
     margin-left: auto;
 }
 
-.navigation__icon--headerright {
+/* .navigation__icon--headerright {
     margin-left: auto;
+} */
+
+.navigation__icon--headerleft,
+.navigation__icon--headerright {
+    display: flex;
+    align-items: center;
+    gap: 16px;
+}
+
+.page-picture img {
+    display: block;
+    width: 100%;
+    height: auto;
 }
